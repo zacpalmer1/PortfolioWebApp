@@ -25,8 +25,6 @@ export default function Home() {
   },[height, router, status]);
 
   return (
-        //dsfjkasdfa kda fldj
-        //asdfasd 
   <div className="w-screen h-screen flex flex-col lg:flex-col bg-stone-900">      
     <div className="mx-auto z-20 ">
       <div className="max-w-screen mx-auto flex flex-col z-20 items-center">
@@ -77,7 +75,6 @@ export default function Home() {
           </Nav.Link>
           </div>
         </div>
-  
         </div>
  
   );
