@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url("//db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.svg#Museo Sans 700");
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Inter:wght@600&family=Montserrat:wght@100;700&family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Inter:wght@200;600&family=Montserrat:wght@100;700&family=Notable&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,3 +9,12 @@
 
 * > * {
   font-family: 'Inter', sans-serif;}
+
+  h1{
+    font-family: 'Inter', sans-serif;
+    font-weight:700;
+  }
+  p{
+    font-family: 'Inter', sans-serif;
+    font-weight:400;
+  }
