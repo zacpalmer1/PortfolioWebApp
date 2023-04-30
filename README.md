@@ -15,4 +15,4 @@ pnpm dev
 
 User can hover over any text and color of text will change 
 
-<img width="800" alt="Screenshot 2023-04-21 at 8 23 44 PM" src="https://user-images.githubusercontent.com/75393933/233751836-51601d5e-411d-47c4-8c89-959557cbb9ab.png">
+<img width="800" alt="Screenshot 2023-04-30 at 3 39 15 PM" src="https://user-images.githubusercontent.com/75393933/235373048-00dd0e6c-4978-49bd-88e9-9c62e91ff9c7.png">
