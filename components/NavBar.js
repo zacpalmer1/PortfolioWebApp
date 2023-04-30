@@ -11,7 +11,8 @@ const NavBar = () => {
   const { data: session, status } = useSession();
   if (status === 'authenticated') {
     return (
-      <Navbar fluid expand="lg" className="bg-stone-900 ">
+      <Navbar fluid expand="lg" className="bg-zinc-800 bg-opacity-95 backdrop-blur-95 fixed top-0 w-full">
+        <div className="container mx-auto flex justify-between">
         <Navbar.Brand
           className="flex flex-row items-center justify-center lang-de"
           href="/"
@@ -19,10 +20,10 @@ const NavBar = () => {
         >
           <Nav.Link
               
-              className="text-stone-600 hover:text-red-400 text-m font-bold text-md"
+              className="text-stone-300 hover:text-stone-100 duration-500 text-m font-bold text-md"
               href="/dashboard"
             >
-              ZP 
+              Palmer
             </Nav.Link>
         </Navbar.Brand>
         <Container>
@@ -31,14 +32,14 @@ const NavBar = () => {
             <Nav className="justify-content-end text-white" style={{ paddingRight: "30px", width: '100%' }}>
               
               <Nav.Link
-                className="text-stone-600 hover:text-blue-400 text-m font-bold text-xs"
+                className="text-stone-300 hover:text-stone-100 duration-500 text-m font-bold text-xs"
                 href="/"
               >
                 Home
               </Nav.Link>
               <Nav.Link
               
-                className="text-stone-600 hover:text-red-400 text-m font-bold text-xs"
+                className="text-stone-300 hover:text-stone-100 duration-500 text-m font-bold text-xs"
                 href="/dashboard"
               >
                 Projects 
@@ -46,14 +47,14 @@ const NavBar = () => {
 
               <Nav.Link
               
-              className="text-stone-600 hover:text-orange-400 text-brand-text-m font-bold text-xs"
+              className="text-stone-300 hover:text-stone-100 duration-500 text-brand-text-m font-bold text-xs"
               href="/profile"
             >
               About  
             </Nav.Link>
             <Nav.Link
               
-              className="text-stone-600 hover:text-green-400 text-brand-text-m font-bold text-xs"
+              className="text-stone-300 hover:text-stone-100 duration-500 text-brand-text-m font-bold text-xs"
               href="/profile"
             >
               Contact  
@@ -62,7 +63,7 @@ const NavBar = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
-
+        </div>
       </Navbar>
     );
   }
