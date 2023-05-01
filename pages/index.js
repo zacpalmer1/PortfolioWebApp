@@ -5,8 +5,9 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import interloop from '../styles/images/interloop1.svg';
 import health from '../styles/images/health.svg';
-import memoji from '../styles/images/memoji1.svg';
-import interloopmain from '../styles/images/interloop.svg';
+import memoji from '../styles/images/comp.svg';
+import bye from '../styles/images/bye.svg';
+import light from '../styles/images/light.svg';
 import Image from 'next/legacy/image';
 import Nav from 'react-bootstrap/Nav';
 
@@ -26,18 +27,21 @@ export default function Home() {
   },[height, router, status]);
 
   return (
+    
   <div className="w-screen h-screen flex flex-col lg:flex-col bg-black">      
-    <div className="mx-auto">
+    <div className="h-screen w-screen">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
       <div className="max-w-screen h-screen mx-auto flex flex-col items-center">
         <h1 className="lg:text-8x lw-screen text-center md:text-8xl sm:text-8xl text-stone-100 pt-48 pb-3">Zac Palmer</h1>
         <p className="text-2xl  text-stone-100 bottom-0 ">Software Engineer</p>
         <h1 className="text-lg text-blue-400 bottom-0 pt-2  hover:text-blue-300 duration-500">Resume </h1>
-        <div className="relative m-10">
+        <div className="relative m-16">
               <Image 
                 src={memoji} 
                 alt="SVG Image" 
-                width={520}
-                height={380}
+                width={450}
+                height={300}
                 objectFit="contain"
                 class="opacity-300"
               />
@@ -59,7 +63,8 @@ export default function Home() {
               </div>
               <div className="w-96 m-10 pb-16">
                 <h1 className="text-black pt-2 text-2xl text-center pb-8">Interests</h1>
-                <p className="text-black text-md ">As part of a development team, we had the opportunity to collaborate with Interloop to build a dashboard web application that allows users to view company and individual data with ease. To achieve this, we utilized Next.js and TailwindCSS to create an intuitive and visually appealing front-end design. Additionally, we integrated PowerBI, a powerful data analytics tool, to enable real-time data visualization and analysis. As part of a development team, we had the opportunity to collaborate with Interloop to build a dashboard web application that allows users to view company and individual data with ease. To achieve this, we utilized Next.js and TailwindCSS to create an intuitive and visually appealing front-end design. Additionally, we integrated PowerBI, a powerful data analytics tool, to enable real-time data visualization and analysis.</p>
+                <p className="text-black text-md ">
+I have always been fascinated by the creative aspect of software development. My passion for mobile application development, both for IOS and Android, has led me to explore the possibilities of creating engaging and visually appealing applications that offer seamless user experiences. I enjoy using tools like Figma to create mockups and bring my design ideas to life. <br></br> <br></br> In addition to coding, I love exploring the world of animation and 3D rendering using Blender. It allows me to express my creativity in a unique way and provides an opportunity to experiment with various designs and styles.</p>
               </div>
               </div>
           </div>
@@ -91,12 +96,34 @@ export default function Home() {
                   href="https://github.com/TrentVarnes/interloop"
                   target="_blank"
                 >
-                <h1 className="text-blue-400 text-md pb-2 hover:text-blue-300 duration-500">Code </h1>
+                <h1 className="text-blue-400 text-md pb-2 pr-10 hover:text-blue-300 duration-500">Code </h1>
                 </Nav.Link>
+                <i class="devicon-nextjs-original pr-10 text-white" ></i>
+              <i class="devicon-tailwindcss-original-wordmark pr-10 font-size-12 text-white"></i>
                 </div>
                 <p className="text-white text-md ">As part of a development team, we had the opportunity to collaborate with Interloop to build a dashboard web application that allows users to view company and individual data with ease. To achieve this, we utilized Next.js and TailwindCSS to create an intuitive and visually appealing front-end design. Additionally, we integrated PowerBI, a powerful data analytics tool, to enable real-time data visualization and analysis. The end result was a highly-functional web application.</p>
               </div>
-            
+              
+
+            </div>
+          </div>
+          <div className="bg-white w-screen max-w-screen flex flex-col items-center">
+        <h1 className="text-4xl text-black pt-12 ">Thank you for visiting! </h1>
+        <Nav.Link
+          href="https://www.linkedin.com/in/zac-palmer-b8482b1b7"
+          target="_blank"
+          >
+        <h1 className="text-lg text-blue-400 pt-2 hover:text-blue-600 duration-500">Contact</h1>
+        </Nav.Link>
+        <div className="relative m-10">
+              <Image 
+                src={bye} 
+                alt="SVG Image" 
+                width={420}
+                height={280}
+                objectFit="contain"
+                class="opacity-300"
+              />
             </div>
           </div>
           <div className="bg-zinc-200 max-w-screen  flex flex-row  pb-8">
