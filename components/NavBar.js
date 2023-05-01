@@ -11,17 +11,23 @@ const NavBar = () => {
   const { data: session, status } = useSession();
   if (status === 'authenticated') {
     return (
-      <Navbar fluid expand="lg" className="bg-zinc-800 bg-opacity-95 backdrop-blur-95 fixed top-0 w-full">
-        <div className="container mx-auto flex justify-between">
+      
+      <Navbar fluid expand="lg" className="bg-zinc-700 bg-opacity-90 backdrop-filter backdrop-blur-md flex flex-col fixed w-full z-10">
+        <div className="w-screen h-8 top-0 bg-zinc-800 text-zinc-300 text-xs absolute "> 
+        <div className="mt-2 pl-28">
+        <p>Software Engineer &nbsp; &nbsp;| &nbsp; &nbsp;Portfolio</p>
+        </div>
+        </div>
+        <div className="container mx-auto flex justify-between mt-8">
         <Navbar.Brand
           className="flex flex-row items-center justify-center lang-de"
           href="/"
-          style={{ paddingLeft: "50px", paddingRight: "60px" }}
+          style={{ paddingLeft: "80px", paddingRight: "80px" }}
         >
           <Nav.Link
               
-              className="text-stone-300 hover:text-stone-100 duration-500 text-m font-bold text-md"
-              href="/dashboard"
+              className="text-zinc-300 hover:text-stone-100 duration-500 text-m font-bold text-md"
+              href="/n"
             >
               Palmer
             </Nav.Link>
@@ -29,32 +35,32 @@ const NavBar = () => {
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="justify-content-end text-white" style={{ paddingRight: "30px", width: '100%' }}>
+            <Nav className="justify-content-end text-white " style={{ paddingRight: "80px", width: '100%' }}>
               
               <Nav.Link
-                className="text-stone-300 hover:text-stone-100 duration-500 text-m font-bold text-xs"
+                className="text-zinc-300 hover:text-stone-100  duration-500 text-m font-bold text-xs"
                 href="/"
               >
                 Home
               </Nav.Link>
               <Nav.Link
               
-                className="text-stone-300 hover:text-stone-100 duration-500 text-m font-bold text-xs"
+                className="text-zinc-300 hover:text-stone-100 duration-500 text-m font-bold text-xs"
                 href="/dashboard"
               >
-                Projects 
+                LinkedIn 
               </Nav.Link>
 
               <Nav.Link
               
-              className="text-stone-300 hover:text-stone-100 duration-500 text-brand-text-m font-bold text-xs"
+              className="text-zinc-300 hover:text-stone-100 duration-500 text-brand-text-m font-bold text-xs"
               href="/profile"
             >
-              About  
+              Github  
             </Nav.Link>
             <Nav.Link
               
-              className="text-stone-300 hover:text-stone-100 duration-500 text-brand-text-m font-bold text-xs"
+              className="text-zinc-300 hover:text-stone-100 duration-500 text-brand-text-m font-bold text-xs"
               href="/profile"
             >
               Contact  
