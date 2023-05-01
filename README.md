@@ -17,3 +17,17 @@ User can hover over any text and color of text will change
 
 <img width="800" alt="Screenshot 2023-05-01 at 1 11 23 AM" src="https://user-images.githubusercontent.com/75393933/235494241-465671e1-0278-460a-9868-7cf282632ffb.gif">
 
+## Changes Needed:
+
+Home:
+- Memoji animation with spotlight falling and text bubble appearing
+
+About:
+- Animation for when scrolling
+  - Text appear from side and slide in
+
+Projects:
+-Demo should link to Demo Page
+- Scroll Implemtation
+  -Scroll should appear from side with animation
+
