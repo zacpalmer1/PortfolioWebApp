@@ -46,7 +46,7 @@ const NavBar = () => {
               <Nav.Link
               
                 className="text-zinc-300 hover:text-stone-100 duration-500 text-m font-bold text-xs"
-                href="/dashboard"
+                href="https://www.linkedin.com/in/zac-palmer-b8482b1b7"
               >
                 LinkedIn 
               </Nav.Link>
@@ -54,7 +54,7 @@ const NavBar = () => {
               <Nav.Link
               
               className="text-zinc-300 hover:text-stone-100 duration-500 text-brand-text-m font-bold text-xs"
-              href="/profile"
+              href="https://github.com/zacpalmer1"
             >
               Github  
             </Nav.Link>
