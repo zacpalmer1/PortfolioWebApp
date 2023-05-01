@@ -55,7 +55,7 @@ export default function Home() {
         <div className="flex flex-row ">
               <div className="w-96 m-10 pb-16">
                 <h1 className="text-black pt-2 text-2xl text-center pb-8">Experience</h1>
-                <p className="text-black text-md">As part of a development team, we had the opportunity to collaborate with Interloop to build a dashboard web application that allows users to view company and individual data with ease. To achieve this, we utilized Next.js and TailwindCSS to create an intuitive and visually appealing front-end design. Additionally, we integrated PowerBI, a powerful data analytics tool, to enable real-time data visualization and analysis. As part of a development team, we had the opportunity to collaborate with Interloop to build a dashboard web application that allows users to view company and individual data with ease. </p>
+                <p className="text-black text-md">As a software engineer with a passion for problem-solving, I graduated from the College of Charleston with a Bachelor's degree in Computer Science. Throughout my academic journey, I gained experience in a range of programming languages and frameworks, including Java, Kotlin, Javascript, and Swift. <br></br><br></br> I am always eager to learn new skills and take on new challenges. I am well-versed in Agile development and documentation, and I possess excellent interpersonal skills, enabling me to communicate effectively with colleagues and stakeholders. </p>
               </div>
               <div className="w-96 m-10 pb-16">
                 <h1 className="text-black pt-2 text-2xl text-center pb-8">Interests</h1>
