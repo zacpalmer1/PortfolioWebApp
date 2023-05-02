@@ -1,43 +1,34 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { useSession, signIn, signOut } from 'next-auth/react';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { useState } from 'react';
+import interloop from '../styles/images/interloop1.svg';
+import health from '../styles/images/health.svg';
+import memoji from '../styles/images/comp.svg';
+import bye from '../styles/images/bye.svg';
+import light from '../styles/images/light.svg';
+import Image from 'next/legacy/image';
 import Nav from 'react-bootstrap/Nav';
-import Image from 'next/image';
-import resume from '../styles/images/resume.svg';
 
-export default function Profile() {
+
+export default function Home() {
   const { data: session, status } = useSession();
   const router = useRouter();
+  const [height, setHeight] = useState(0);
 
   useEffect(() => {
+    document.documentElement.style.height = `${height}px`;
+    document.body.style.height = `${height}px`;
     if (status === 'authenticated') {
     } else if (status === 'unauthenticated') {
       void router.push('/login');
     }
-  });
+  },[height, router, status]);
+
   return (
-    <div className="w-screen h-screen flex flex-col lg:flex-col bg-black">      
-    <div className="h-screen w-screen">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
-      <div className="max-w-screen h-screen flex flex-col items-center">
-        <h1 className="lg:text-8x lw-screen text-center md:text-8xl sm:text-8xl text-stone-100 pt-48 pb-3">Resume</h1>
-        
-        <h1 className="text-lg text-blue-400 bottom-0 pt-2  hover:text-blue-300 duration-500">Download</h1>
-        <div className="relative m-8">
-              <Image 
-                src={resume} 
-                alt="SVG Image" 
-                width={350}
-                height={300}
-                class="opacity-300"
-              />
-            </div>
-      </div>
-    </div>
-    <div className="bg-zinc-200 max-w-screen  flex flex-row  pb-8">
+    <div>
+          <div className="bg-zinc-200 max-w-screen  flex flex-row  pb-8">
           <div className="text-black  bg-zinc-200 mt-4 ml-28 pr-5 text-xs ">
             
               <h1 class="mb-1 ">Home</h1>
@@ -67,7 +58,7 @@ export default function Profile() {
                 >
                   <Nav.Link
                         href="/interloop_demo"
-                        target="_blank"
+                
                 >
               <p class="mb-1">Demo</p>
               </Nav.Link>
@@ -140,7 +131,7 @@ export default function Profile() {
               <p>Copyright © 2023 Zac Palmer. All rights reserved.</p>
               </div>
             </div>
-            
-    </div>
+            </div>
+        
   );
 }

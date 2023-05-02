@@ -38,7 +38,6 @@ export default function Home() {
         <p className="text-2xl  text-stone-100 bottom-0 ">Software Engineer</p>
         <Nav.Link
           href="/resume"
-          target="_blank"
           >
         <h1 className="text-lg text-blue-400 bottom-0 pt-2  hover:text-blue-300 duration-500">Resume </h1>
         </Nav.Link>
@@ -79,7 +78,7 @@ export default function Home() {
               href="https://github.com/zacpalmer1"
               target="_blank"
             >
-              <h1 className="text-lg text-blue-400 pt-2 hover:text-green-300 duration-500">Github  </h1>
+              <h1 className="text-lg text-blue-400 pt-2 hover:text-green-400 duration-500">Github</h1>
             </Nav.Link>
           <div className="flex flex-row md:flex-col m-8">
             <div className="relative bottom-0  left-0 m-10">
@@ -98,7 +97,6 @@ export default function Home() {
                   <div className="flex flex-row items-center">
                   <Nav.Link
                         href="/interloop_demo"
-                        target="_blank"
                 >
                     <h1 className="text-blue-400  text-md pr-10 hover:text-blue-300 duration-500">Demo </h1>
                     </Nav.Link>
@@ -106,7 +104,7 @@ export default function Home() {
                         href="https://github.com/TrentVarnes/interloop"
                         target="_blank"
                 >
-                <h1 className="text-blue-400 text-md pr-10 hover:text-blue-300 duration-500">Code </h1>
+                <h1 className="text-blue-400 text-md pr-10 hover:text-green-400 duration-500">Code </h1>
                 </Nav.Link>
                 <div className="h-auto flex justify-center items-center">
                 <Nav.Link
@@ -178,7 +176,7 @@ export default function Home() {
                 >
                   <Nav.Link
                         href="/interloop_demo"
-                        target="_blank"
+                
                 >
               <p class="mb-1">Demo</p>
               </Nav.Link>

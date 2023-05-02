@@ -4,6 +4,7 @@ const Layout = ({ children }) => (
   <>
     <NavBar />
     <main className=" mx-auto ">{children}</main>
+    <footer />
   </>
 );
 

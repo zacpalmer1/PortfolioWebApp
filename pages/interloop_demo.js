@@ -28,7 +28,7 @@ export default function Dashboard() {
           href="https://www.linkedin.com/in/zac-palmer-b8482b1b7"
           target="_blank"
           >
-        <h1 className="text-lg text-blue-400 bottom-0 pt-2  hover:text-blue-300 duration-500">Code</h1>
+        <h1 className="text-lg text-blue-400 bottom-0 pt-2  hover:text-green-400 duration-500">Code</h1>
         </Nav.Link>
         <div className="relative bottom-0  left-0 m-10">
               <Image 
@@ -41,15 +41,43 @@ export default function Dashboard() {
               />
             </div>
       </div>
-      <div className="bg-white w-screen h-screen flex flex-col items-center pb-8">
-          <h1 className="text-4xl text-black pt-12 ">Login</h1>
+      <div className="bg-white w-screen  flex flex-col items-center pb-8">
+          <h1 className="text-4xl text-black pt-12 ">Sign up</h1>
             <Nav.Link
               href="https://github.com/zacpalmer1"
               target="_blank"
             >
               
             </Nav.Link>
-          <div className="flex flex-row md:flex-col items-center  justify-between m-8">
+          <div className="flex flex-row md:flex-col m-8">
+          <div className="w-96 pb-20 mt-16 ">
+                <p className="text-black text-md ">As part of a development team, we had the opportunity to collaborate with Interloop to build a dashboard web application that allows users to view company and individual data with ease. To achieve this, we utilized Next.js and TailwindCSS to create an intuitive and visually appealing front-end design. Additionally, we integrated PowerBI, a powerful data analytics tool, to enable real-time data visualization and analysis. </p>
+              </div>
+            <div className="relative m-10">
+              <Image 
+                src={interloop} 
+                alt="SVG Image" 
+                width={520}
+                height={380}
+                objectFit="contain"
+                class="opacity-300"
+              
+              />
+            </div>
+              
+              
+
+            </div>
+          </div>
+          <div className="bg-black w-screen  flex flex-col items-center ">
+          <h1 className="text-4xl text-white pt-12 ">Login</h1>
+            <Nav.Link
+              href="https://github.com/zacpalmer1"
+              target="_blank"
+            >
+              
+            </Nav.Link>
+          <div className="flex flex-row md:flex-col  m-8">
             <div className="relative bottom-0  left-0 m-10">
               <Image 
                 src={interloop} 
@@ -62,13 +90,43 @@ export default function Dashboard() {
               />
             </div>
               <div className="w-96 pb-20 mt-16 ">
-                <p className="text-black text-md ">As part of a development team, we had the opportunity to collaborate with Interloop to build a dashboard web application that allows users to view company and individual data with ease. To achieve this, we utilized Next.js and TailwindCSS to create an intuitive and visually appealing front-end design. Additionally, we integrated PowerBI, a powerful data analytics tool, to enable real-time data visualization and analysis. </p>
+                <p className="text-white text-md ">As part of a development team, we had the opportunity to collaborate with Interloop to build a dashboard web application that allows users to view company and individual data with ease. To achieve this, we utilized Next.js and TailwindCSS to create an intuitive and visually appealing front-end design. Additionally, we integrated PowerBI, a powerful data analytics tool, to enable real-time data visualization and analysis. </p>
               </div>
               
 
             </div>
           </div>
+          <div className="bg-white w-screen  flex flex-col items-center ">
+          <h1 className="text-4xl text-black pt-12 ">Home</h1>
+            <Nav.Link
+              href="https://github.com/zacpalmer1"
+              target="_blank"
+            >
+              
+            </Nav.Link>
+            
+          <div className="flex flex-row md:flex-col  m-8">
+          <div className="w-96 pb-20 mt-16 ">
+                <p className="text-black text-md ">As part of a development team, we had the opportunity to collaborate with Interloop to build a dashboard web application that allows users to view company and individual data with ease. To achieve this, we utilized Next.js and TailwindCSS to create an intuitive and visually appealing front-end design. Additionally, we integrated PowerBI, a powerful data analytics tool, to enable real-time data visualization and analysis. </p>
+              </div>
+            <div className="relative bottom-0  left-0 m-10">
+              <Image 
+                src={interloop} 
+                alt="SVG Image" 
+                width={520}
+                height={380}
+                objectFit="contain"
+                class="opacity-300"
+              
+              />
+            </div>
+              
+              
+
+            </div>
+          </div>
     </div>
+    
     </div>
   );
 }
