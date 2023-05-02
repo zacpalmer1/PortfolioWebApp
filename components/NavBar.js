@@ -34,7 +34,7 @@ const NavBar = () => {
         </Navbar.Brand>
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="justify-content-end text-white " style={{ paddingRight: "60px", width: '100%' }}>
               
               <Nav.Link

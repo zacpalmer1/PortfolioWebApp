@@ -18,3 +18,12 @@
     font-family: 'Inter', sans-serif;
     font-weight:400;
   }
+  .devicon-nextjs-original,
+  .devicon-tailwindcss-original-wordmark {
+    font-size: 5em;
+  }
+  .devicon-nextjs-original,
+  .devicon-tailwindcss-original {
+    font-size: 1.5em;
+    
+  }
